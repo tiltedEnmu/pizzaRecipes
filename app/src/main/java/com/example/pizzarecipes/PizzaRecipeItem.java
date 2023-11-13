@@ -2,14 +2,16 @@ package com.example.pizzarecipes;
 
 public class PizzaRecipeItem {
 
-    private int imageResource;
-    private String title;
-    private String description;
+    private final int imageResource;
+    private final String title;
+    private final String description;
+    private final String recipe;
 
-    public PizzaRecipeItem(int imageResource, String title, String description) {
+    public PizzaRecipeItem(int imageResource, String title, String description, String recipe) {
         this.imageResource = imageResource;
         this.title = title;
         this.description = description;
+        this.recipe = recipe;
     }
 
     public int getImageResource() {
@@ -22,5 +24,9 @@ public class PizzaRecipeItem {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getRecipe() {
+        return recipe;
     }
 }
